@@ -125,3 +125,7 @@ nav.other-pages-nav ul li a:hover {
     flex-grow: 1;
     padding: 20px;
 }
+
+.indented-text {
+    padding-left: 20px;
+}
