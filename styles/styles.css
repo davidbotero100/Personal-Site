@@ -5,8 +5,6 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
-
 body {
     font-family: 'IBM Plex Mono', monospace;
     background-color: black;
@@ -16,8 +14,9 @@ body {
 /* Main Wrapper */
 .main-wrapper {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 100vh;
     padding: 20px;
 }
@@ -32,6 +31,7 @@ body {
     align-items: center;
     justify-content: center;
     border-right: 5px solid white;
+    margin-top: 40px;
 }
 
 .face-picture {
@@ -56,7 +56,7 @@ nav.index-nav {
     text-align: center;
     width: 60%;
     position: absolute;
-    left: 50%;
+    left: 60%;
     top: 50%;
     transform: translateX(-50%);
 }
@@ -92,7 +92,7 @@ nav.other-pages-nav {
     text-align: center;
     width: 60%;
     position: absolute;
-    left: 50%;
+    left: 60%;
     transform: translateX(-50%);
 }
 
@@ -120,13 +120,46 @@ nav.other-pages-nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Content Area */
+/* Content Section */
 .content {
-    flex-grow: 1;
+    text-align: center;
+    width: 80%;
     padding: 20px;
-    padding-left: 55px;
 }
 
-.indented-text {
-    padding-left: 20px;
+/* Media Queries for Larger Screens (For tablets and above) */
+@media (min-width: 600px) {
+
+    .left-rectangle {
+        margin-top: 60px;
+        /* Adjust top margin for smaller screens */
+    }
+
+    /* Adjusting flex-direction for larger screens */
+    .main-wrapper {
+        flex-direction: row;
+        /* Switch to horizontal layout */
+        justify-content: space-between;
+    }
+
+    .left-rectangle {
+        width: 25%;
+        /* Make the left section smaller on larger screens */
+    }
+
+    .content {
+        width: 70%;
+        /* Adjust content width on larger screens */
+        text-align: left;
+        /* Align content to the left */
+    }
+
+    .face-picture {
+        width: 200px;
+        height: 200px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
 }
