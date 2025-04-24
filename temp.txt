@@ -1,0 +1,11 @@
+Natural Vs. Artificial: a human-made concept with great utility and horrific consequences.<br><br>
+
+                Claim: <br>
+                If humans are natural, then there is no such thing as artificial.<br><br>
+
+                Proof: <br>
+                Assume that humans are natural
+
+
+                By way of contradiction we can prove this. By the definition of artificial we get that <br>
+                it is a human-made concept and since human-made things are called "artificial"

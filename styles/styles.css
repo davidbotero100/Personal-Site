@@ -144,7 +144,6 @@ nav.other-pages-nav ul li a:hover {
 
     .left-rectangle {
         width: 25%;
-        /* Make the left section smaller on larger screens */
     }
 
     .content {
@@ -155,8 +154,8 @@ nav.other-pages-nav ul li a:hover {
     }
 
     .face-picture {
-        width: 200px;
-        height: 200px;
+        width: relative;
+        height: relative;
     }
 
     .name {
